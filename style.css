@@ -203,17 +203,13 @@ line-height: 175%;
 }
 
 .facility{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 20px 108px 20px 108px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .facility .title{
-   
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-    justify-content: flex-start;
+
 }
 .facility h2{
     width: 368px;
@@ -223,7 +219,7 @@ line-height: 175%;
     font-style: normal;
     font-weight: 700;
     line-height: 109.8%;
-     /* 39.528px */
+     
 }
 hr{
     background-color: #5800A5;
@@ -231,21 +227,27 @@ hr{
     height: 5px;
 }
 .facility p{
-    width: 537px;
+    padding: 30px;
+   
     color: #434343;
     font-family: inherit;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 175%; /* 42px */
+    line-height: 175%; 
 }
 @media only screen and (max-width:600px) {
     .facility{
         margin: 20px;
+       
     }
     .facility h2{
         width: 250px;
         font-size: 26px;
+    }
+    .facility p{
+       
+        padding: 10px;
     }
 
 }
@@ -356,9 +358,10 @@ line-height: 109.8%; /* 52.704px */
 }
 .book h2{
     font-size: 48px;
+   
 }
 .book p{
-
+    max-width: 90vw;
     color: #434343;
     font-family: Archivo;
     font-size: 18px;
@@ -478,7 +481,9 @@ line-height: 109.8%; /* 52.704px */
 
 
 .testimonial-head{
- 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #5800A5;
     font-family: Archivo;
     font-size: 48px;
@@ -552,3 +557,51 @@ line-height: 109.8%; /* 52.704px */
       display: none;
     }
   }
+
+  .contact{
+    background: url('assets/images/contact-bg.png');
+    font-family: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10px;
+    max-height: 600px;
+    color: #fff;
+  }
+
+  footer{
+    display: flex;
+    color: #000;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .u-links{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  footer li{
+    color: #000;
+    font-weight: bold;
+    padding: 5px;
+    font-family: 'Archivo';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 109.8%; /* 19.764px */
+  }
+
+  @media (max-width:768px) {
+    footer{
+        flex-direction: column;
+    }
+  }
+  
+ 
+  
